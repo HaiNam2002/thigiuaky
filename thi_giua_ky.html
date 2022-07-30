@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://icdn.dantri.com.vn/thumb_w/640/2017/1-1510967806416.jpg">
+    <title>Random App</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>RANDOM NHÓM 15</h1>
+    <h4 id="demo"></h4>
+    <button id="random">Random</button>
+    <script>
+        document.getElementById('random').onclick = () => {
+            const ten = ['Đoàn Thị Thảo Nhung', 'Nguyễn Phạm Hồng Ngọc', 'Nguyễn Hải Nam', 'Nguyễn Đình Hiếu'];
+            const so = Math.round(Math.random()*3);
+            document.getElementById("demo").innerHTML = ten[so];
+        }
+    </script>
+  
+</body>
+</html>
